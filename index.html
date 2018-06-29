@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Crazy Nails</title>
+</head>
+
+<body>
+  <!-- Menu -->
+  <div class="menu">
+    <div class="menu-btn">
+      <a href="#">
+        <span>
+        </span>
+      </a>
+    </div>
+    <nav class="menu-nav">
+      <ul>
+        <li>
+          <a href='#'>Home</a>
+        </li>
+        <li>
+          <a href="#section-a">Who Am I</a>
+        </li>
+        <li>
+          <a href="#section-c">Last Works</a>
+        </li>
+        <li>
+          <a href="#contacts">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Header Showcase -->
+  <header id="showcase" class="grid">
+    <div class="bg-image"></div>
+    <div class="content-wrap">
+      <h1>Welcome to Crazy Nails Studio</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur, ipsum minima cum dignissimos in necessitatibus
+        culpa vero beatae laboriosam?</p>
+      <a href="#section-b" class="btn">Read More</a>
+    </div>
+  </header>
+
+  <!-- Main Area -->
+  <main id="main">
+    <!-- Section A -->
+    <section id="section-a" class="grid">
+      <div class="content-wrap">
+        <h2 class="content-title">Who Am I</h2>
+        <div class="content-text">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem deserunt officia quod id! Cumque, doloremque
+            autem? Quidem nam in aliquam quae exercitationem? Quisquam, tenetur ut eius dolor ratione quod incidunt repudiandae
+            ullam enim voluptatem eos explicabo expedita eveniet dolorum adipisci, fugit excepturi nihil. Molestiae ipsum
+            quisquam, sint commodi earum provident.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section B -->
+    <section id="section-b" class="grid">
+      <ul>
+        <li>
+          <div class="card">
+            <img src="care-clean-close-up-939835.jpg" alt="">
+            <div class="card-content">
+              <h3 class="card-title">Manicure</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, optio temporibus.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="adult-art-beauty-310278.jpg" alt="">
+            <div class="card-content">
+              <h3 class="card-title">Pedicure</h3>
+              <p>Delectus, optio temporibus. Rerum sequi consequuntur dolorum reprehenderit optio ad possimus qui.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="adult-body-fashion-361754.jpg" alt="">
+            <div class="card-content">
+              <h3 class="card-title">Modeling</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit optio ad possimus.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section C -->
+    <section id="section-c" class="grid">
+      <div class="content-wrap">
+        <h2 class="content-title">Last Works</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi voluptate veritatis doloremque quas nisi ducimus
+          eligendi iure! Omnis velit doloremque, voluptatibus sunt officiis enim, blanditiis culpa obcaecati nesciunt commodi
+          praesentium!
+        </p>
+      </div>
+    </section>
+
+    <!-- Section D -->
+    <section id="section-d" class="grid">
+      <div class="box">
+        <h2 class="content-title">Testimonials</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi veritatis eligendi perferendis sed repudiandae
+          assumenda quas nesciunt numquam sit omnis.</p>
+      </div>
+      <div id="contacts" class="box">
+        <h2 class="content-title">Contact Us</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi veritatis eligendi perferendis sed repudiandae
+          assumenda quas nesciunt numquam sit omnis.</p>
+        <p>
+          <a href='#'>contact@gmail.com</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="grid" id="main-footer">
+    <div>Social Network</div>
+    <div>Web Design Studio</div>
+  </footer>
+</body>
+<script>
+  // const btn = document.querySelector('.menu-btn');
+  // const nav = document.querySelector('nav>ul');
+  // const toggle = (e) => {
+  //   e.preventDefault;
+  //   nav.style.display == 'block' ? nav.style.display = 'none' : nav.style.display = 'block';
+  // }
+  // btn.addEventListener('click', toggle);
+
+  $(() => {
+    const $menu = $('.menu');
+    const $btn = $('.menu-btn');
+    const $nav = $('nav');
+
+    // $(window).resize(() => {
+    //   if ($menu.css('display') == 'none' && window.innerWidth > 680)
+    //   { $menu.show(); }
+    // });
+
+    $btn.click((e) => {
+      e.preventDefault;
+      // $menu.toggleClass('menu_active');
+      $btn.toggleClass('menu-btn_active');
+      // $nav.slideToggle(500);
+      $nav.toggleClass('nav_active');
+    });
+  });
+
+</script>
+
+</html>
